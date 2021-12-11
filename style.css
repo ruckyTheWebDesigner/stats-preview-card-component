@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+     * {
+        box-sizing: border-box;
+      }
+      body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+  height: 100%;
+}
+.below {
+  display: inline-flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+      img {
+          opacity: 0;
+         width: 100%;
+        
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        margin: 25px auto;   
+        border-radius: 50px;
+        
+      }
+
+      .flex-item-left {
+      background-color: hsl(244, 38%, 16%);
+     padding: 30px 30px;
+
+        
+        flex: 50%;
+
+      }
+
+      .flex-item-right {
+        background:linear-gradient(0deg, rgba(163, 4, 194, 0.345), rgba(255, 0, 150, 0.3)), url(./image-header-desktop.jpg); background-size: cover; background-repeat: no-repeat;">
+       
+        flex: 50%;
+      }
+
+      p {
+  font-size: 10px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.482);
+ 
+}
+
+h5 {
+
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.attribution a {
+    color: hsl(277, 64%, 61%);
+}
+
+      /* Responsive layout - makes a one column-layout instead of two-column layout */
+      @media (max-width: 800px) {
+
+        .flex-container {
+          flex-direction: column-reverse;
+          width: 50%;
+         
+          margin: 30px auto;
+        }
+       .flex-item-left {
+           text-align: center;
+padding: 5px 20px;
+       }
+       .below {
+           display: block;
+           padding-top: 0;
+       }
+       img {
+           height: 150px;
+           
+       }
+      }
